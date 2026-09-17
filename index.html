@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TechSprint - Ultimate Tech & Aptitude Quiz</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- SPACE BACKGROUND -->
+    <div class="space">
+
+        <div class="stars"></div>
+
+        <div class="planet planet-one"></div>
+        <div class="planet planet-two"></div>
+        <div class="planet planet-three"></div>
+
+        <div class="planet-ring"></div>
+
+        <div class="moon"></div>
+
+        <div class="meteor meteor-one"></div>
+        <div class="meteor meteor-two"></div>
+        <div class="meteor meteor-three"></div>
+
+    </div>
+
+    <!-- ASTRO CURSOR -->
+    <div id="astroCursor">
+        <div class="cursor-core"></div>
+        <div class="cursor-ring"></div>
+        <div class="cursor-star">✦</div>
+    </div>
+
+    <!-- HEADER -->
+    <header class="topbar">
+
+        <div class="brand">
+            <span class="brand-icon">⚡</span>
+
+            <div>
+                <h1>TechSprint</h1>
+                <p>THINK • SOLVE • WIN</p>
+            </div>
+        </div>
+
+        <div class="space-label">
+            🚀 SPACE QUIZ MISSION
+        </div>
+
+    </header>
+
+
+    <!-- MAIN -->
+    <main class="main-container">
+
+        <section class="quiz-card" id="quizContainer">
+
+            <!-- TOP INFORMATION -->
+            <div class="quiz-top">
+
+                <div class="question-number">
+                    QUESTION <span id="questionNumber">01</span>/50
+                </div>
+
+                <div class="difficulty" id="difficulty">
+                    EASY
+                </div>
+
+                <div class="timer">
+                    <span>⏱</span>
+                    <span id="timer">20</span>s
+                </div>
+
+            </div>
+
+
+            <!-- PLAYER STATS -->
+            <div class="stats">
+
+                <div class="stat-box lives">
+                    <span>❤️</span>
+                    <div>
+                        <small>LIVES</small>
+                        <strong id="lives">❤️❤️❤️</strong>
+                    </div>
+                </div>
+
+                <div class="stat-box">
+                    <span>🔥</span>
+                    <div>
+                        <small>STREAK</small>
+                        <strong id="streak">0</strong>
+                    </div>
+                </div>
+
+                <div class="stat-box">
+                    <span>⚡</span>
+                    <div>
+                        <small>XP</small>
+                        <strong id="xp">0</strong>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- PROGRESS -->
+            <div class="progress-area">
+
+                <div class="progress-text">
+                    <span>MISSION PROGRESS</span>
+                    <span id="progressText">0%</span>
+                </div>
+
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progressFill"></div>
+                </div>
+
+            </div>
+
+
+            <!-- QUESTION -->
+            <div class="question-box">
+
+                <div class="question-category" id="category">
+                    TECHNICAL
+                </div>
+
+                <h2 id="question">
+                    Loading question...
+                </h2>
+
+            </div>
+
+
+            <!-- OPTIONS -->
+            <div class="options" id="options">
+
+                <!-- JavaScript will add options -->
+
+            </div>
+
+
+            <!-- HINT -->
+            <button class="hint-btn" id="hintBtn">
+                💡 SHOW HINT
+            </button>
+
+            <div class="hint-box" id="hintBox"></div>
+
+
+            <!-- FEEDBACK -->
+            <div class="feedback" id="feedback"></div>
+
+
+            <!-- NEXT BUTTON -->
+            <button class="next-btn" id="nextBtn">
+                NEXT QUESTION 🚀
+            </button>
+
+
+            <div class="score-line">
+                SCORE: <span id="score">0</span>
+            </div>
+
+        </section>
+
+
+        <!-- CAT CELEBRATION -->
+        <div class="cat-celebration" id="catCelebration">
+
+            <div class="cat">🐱</div>
+            <div class="cat-message">PURR-FECT! ✨</div>
+
+        </div>
+
+
+        <!-- RESULT -->
+        <section class="result-card" id="resultScreen">
+
+            <div class="trophy">🏆</div>
+
+            <h2>MISSION COMPLETE</h2>
+
+            <p class="result-subtitle">
+                You completed the TechSprint space mission!
+            </p>
+
+            <div class="result-stats">
+
+                <div>
+                    <span>🎯</span>
+                    <small>SCORE</small>
+                    <strong id="finalScore">0/50</strong>
+                </div>
+
+                <div>
+                    <span>📊</span>
+                    <small>ACCURACY</small>
+                    <strong id="accuracy">0%</strong>
+                </div>
+
+                <div>
+                    <span>🔥</span>
+                    <small>BEST STREAK</small>
+                    <strong id="finalStreak">0</strong>
+                </div>
+
+                <div>
+                    <span>⚡</span>
+                    <small>TOTAL XP</small>
+                    <strong id="finalXP">0</strong>
+                </div>
+
+            </div>
+
+            <div class="rank-box">
+                <span>SPACE RANK</span>
+                <strong id="rank">SPACE ROOKIE</strong>
+            </div>
+
+            <p id="resultMessage"></p>
+
+            <button class="restart-btn" id="restartBtn">
+                🚀 PLAY AGAIN
+            </button>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <span>⚡ TECHSPRINT</span>
+        <span>•</span>
+        <span>Made with 💙 for future engineers</span>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
