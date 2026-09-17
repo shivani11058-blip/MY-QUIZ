@@ -1,4 +1,4 @@
-* {
+ {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -23,9 +23,7 @@ body {
 }
 
 
-/* =====================================
-   SPACE BACKGROUND
-===================================== */
+
 
 .space {
     position: fixed;
@@ -37,7 +35,7 @@ body {
 }
 
 
-/* STARS */
+
 
 .stars {
     position: absolute;
@@ -72,7 +70,7 @@ body {
 }
 
 
-/* PLANETS */
+
 
 .planet {
     position: absolute;
