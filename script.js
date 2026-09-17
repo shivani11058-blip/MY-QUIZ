@@ -1,7 +1,3 @@
-/* =========================================
-   TECHSPRINT SPACE QUIZ
-   EXACTLY 50 QUESTIONS
-========================================= */
 
 const questions = [
 
@@ -1590,8 +1586,6 @@ document.addEventListener("keydown", (event) => {
 });
 
 
-/* =========================================
-   START QUIZ
-========================================= */
+
 
 loadQuestion();
